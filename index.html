@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kai Wu — Economics Ph.D. Candidate, UT Austin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            color: #222;
+            background: #fff;
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        a { color: #2a5a8a; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 50px 30px;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            margin-bottom: 50px;
+        }
+
+        .photo {
+            width: 220px;
+            min-width: 220px;
+            border-radius: 3px;
+        }
+
+        .bio h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 4px;
+        }
+
+        .bio .affiliation {
+            font-size: 16px;
+            color: #444;
+            margin-bottom: 14px;
+            line-height: 1.5;
+        }
+
+        .bio .contact {
+            font-size: 15px;
+            color: #444;
+            margin-bottom: 16px;
+        }
+
+        .bio .contact a { color: #2a5a8a; }
+
+        .bio .cv-link {
+            font-size: 15px;
+            margin-bottom: 18px;
+        }
+
+        .bio .about {
+            font-size: 16px;
+            line-height: 1.75;
+            color: #222;
+        }
+
+        /* Sections */
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #222;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        /* Papers */
+        .paper {
+            margin-bottom: 22px;
+        }
+
+        .paper .title {
+            font-weight: 700;
+            font-size: 17px;
+            color: #222;
+        }
+
+        .paper .pdf-link {
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .paper .coauthors {
+            font-size: 16px;
+            color: #444;
+        }
+
+        .paper .abstract-toggle {
+            font-size: 14px;
+            color: #2a5a8a;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .paper .abstract-toggle:hover {
+            text-decoration: underline;
+        }
+
+        .paper .abstract-toggle .arrow {
+            display: inline-block;
+            transition: transform 0.2s;
+            font-size: 12px;
+            margin-left: 2px;
+        }
+
+        .paper .abstract-toggle.open .arrow {
+            transform: rotate(180deg);
+        }
+
+        .paper .abstract-content {
+            display: none;
+            font-size: 15px;
+            color: #444;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+            line-height: 1.7;
+        }
+
+        .paper .rq {
+            font-size: 15px;
+            color: #444;
+            margin-top: 3px;
+            font-style: italic;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .header { flex-direction: column; align-items: center; text-align: center; gap: 20px; }
+            .photo { width: 160px; min-width: 160px; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <img src="photo.jpg" alt="Kai Wu" class="photo">
+        <div class="bio">
+            <h1>Kai Wu</h1>
+            <div class="affiliation">
+                Ph.D. Candidate in Economics<br>
+                The University of Texas at Austin
+            </div>
+            <div class="contact">
+                <a href="mailto:kaiwu@utexas.edu">kaiwu@utexas.edu</a>
+            </div>
+            <div class="cv-link">
+                <a href="CV_KaiWu.pdf" target="_blank">[Curriculum Vitae]</a>
+            </div>
+            <div class="about">
+                Welcome! I am a Ph.D. candidate in economics at UT Austin. My research interests are public economics, networks, environmental economics, and urban economics.
+            </div>
+        </div>
+    </div>
+
+    <!-- Job Market Paper -->
+    <h2>Job Market Paper</h2>
+
+    <div class="paper">
+        <span class="title">Beyond Targeted Firms: Supply Chain Spillovers of Environmental Regulation in China</span>
+        <span class="pdf-link">[Draft available upon request]</span>
+    </div>
+
+    <!-- Working Papers -->
+    <h2>Working Papers</h2>
+
+    <div class="paper">
+        <span class="title">Crowding</span>
+        <span class="pdf-link"><a href="Crowding.pdf" target="_blank">[Draft]</a></span>
+        <br>
+        <span class="coauthors">(with Yizhen Gu, Qu Tang, and Ben Zou)</span>
+        <br>
+        <span class="abstract-toggle" onclick="toggleAbstract(this)">Abstract <span class="arrow">&#9660;</span></span>
+        <div class="abstract-content">
+            Crowding is a common disamenity, yet little is known about its monetary cost. We estimate the willingness to pay (WTP) to avoid crowding in public transit with a revealed-preference approach. Beijing Subway passengers choose departure times, trading off fare, in-train crowding, and schedule deviation, with price variation from an early-bird discount. Leveraging the subway's network structure, we impute real-time in-train crowding, infer each passenger's optimal arrival time, and construct a novel instrumental variable for crowding. The marginal WTP to reduce crowding by one passenger per square meter is about 0.05 RMB per minute, implying a crowding externality exceeding the fare. High-income passengers have higher crowding WTP but are less price-sensitive. An optimal crowding tax improves welfare but is regressive; a two-class configuration elicits self-selection and benefits both high and low income commuters.
+        </div>
+    </div>
+
+    <div class="paper">
+        <span class="title">Political Consolidation and Corporate Tax Burden</span>
+        <span class="pdf-link"><a href="Political_Consolidation.pdf" target="_blank">[Draft]</a></span>
+        <br>
+        <span class="abstract-toggle" onclick="toggleAbstract(this)">Abstract <span class="arrow">&#9660;</span></span>
+        <div class="abstract-content">
+            I investigate the impact of political consolidation on the corporate tax burden, leveraging the variation from a nationwide reform in China that shifted governance autonomy from annexed to annexing political units. Using administrative firm-level tax payment data from 2008 to 2015 and a heterogeneous difference-in-differences approach, I find divergent shifts in the effective corporate income tax rate among affected areas following the annexation. On average, annexing areas experienced a 1.8% decrease in the effective tax rate, contrasted with a 1.4% increase in annexed areas. These changes worked to make corporate tax rates more uniform across annexed and annexing areas. Also, I find the observed effects are largely attributed to the adjustment in less transparent tax break programs, over which local governments possess greater discretion, underscoring the pivotal role of local taxation rearrangement along with the annexation. Heterogeneity analysis suggests political favoritism and tax competition are additional mechanisms contributing to these findings.
+        </div>
+    </div>
+
+</div>
+
+<script>
+function toggleAbstract(el) {
+    var content = el.nextElementSibling;
+    if (content.style.display === 'block') {
+        content.style.display = 'none';
+        el.classList.remove('open');
+    } else {
+        content.style.display = 'block';
+        el.classList.add('open');
+    }
+}
+</script>
+
+</body>
+</html>
