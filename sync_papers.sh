@@ -10,13 +10,11 @@ set -euo pipefail
 REPO="/Users/kai/kaiwu777.github.io"
 
 # format: "<absolute source path>::<filename inside repo>"
-# SITE BLOCKED 2026-07-06: sync disabled while the site shows a placeholder page.
-# Restore the entries below (and the full index.html from
-# Projects/Web/index_full_backup_2026-07-06.html) when unblocking.
+# Site restored 2026-09-24. Sources live in the migrated Dropbox (Dropbox-Kai/Kai Wu).
 PAPERS=(
-  # "/Users/kai/Library/CloudStorage/Dropbox/Subway Fare/EarlyBird/Draft/Draft_Spring2026/Crowding_ABFER.pdf::Crowding.pdf"
-  # "/Users/kai/Library/CloudStorage/Dropbox/Projects/Web/PoliticalConsolidation_CorporateTax.pdf::Political_Consolidation.pdf"
-  # "/Users/kai/Library/CloudStorage/Dropbox/Projects/Web/CV_KaiWu.pdf::CV_KaiWu.pdf"
+  "/Users/kai/Library/CloudStorage/Dropbox-Kai/Kai Wu/Subway Fare/EarlyBird/Draft/Draft_Spring2026/Crowding_Fall2026.pdf::Crowding.pdf"
+  "/Users/kai/Library/CloudStorage/Dropbox-Kai/Kai Wu/Projects/Web/Political_Consolidation.pdf::Political_Consolidation.pdf"
+  "/Users/kai/Library/CloudStorage/Dropbox-Kai/Kai Wu/Projects/Web/CV_KaiWu.pdf::CV_KaiWu.pdf"
 )
 
 DRY_RUN=0
